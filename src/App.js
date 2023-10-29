@@ -20,14 +20,9 @@ import Navbar from "./Navbar.js"
 export default function BasicExample() {
   return (
     <Router>
-      <div 
-        style={{
-        backgroundColor: 'beige' 
-        }}
-      >
-      
+      <div>
         <Navbar />
-
+        <header className="App-header">
         <br></br>
         <br></br>
         <br></br>
@@ -41,9 +36,11 @@ export default function BasicExample() {
         <br></br>
 
         <hr />
-        <h6 mb-1>แอพพลิเคชั่นนี้ ได้รับการคุ้มครองลิขสิทธิ์ตามกฎหมาย พ.ศ.2522</h6>
-        <h6>พัฒนาโดย อ.ชรินทร์  อุปพันธ์พงศ์ชัย</h6>
 
+        <div className="my_space">
+        <p>แอพพลิเคชั่นนี้ ได้รับการคุ้มครองลิขสิทธิ์ตามกฎหมาย พ.ศ.2522</p>
+        <p>พัฒนาโดย อ.ชรินทร์  อุปพันธ์พงศ์ชัย</p>
+        </div>
 
         {/*
           A <Switch> looks through all its children <Route>
@@ -63,7 +60,7 @@ export default function BasicExample() {
             <Dashboard />
           </Route>
         </Switch> */}
-      
+        </header>
       </div>
     </Router>
   );
